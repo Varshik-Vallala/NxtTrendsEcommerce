@@ -12,11 +12,15 @@ RUN mkdir frontend
 WORKDIR /frontend
 
 
+
+
+# RUN - Installing the dependencies
+RUN npm install
+
 # COPY - copy files to above image
 COPY . .
 
-# RUN - build related commands
-RUN npm install
+#Build the React App
 RUN npm run build
 
 # FROM - To Deploy
