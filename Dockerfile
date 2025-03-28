@@ -11,7 +11,7 @@ RUN mkdir frontend
 # WORKDIR - working directory
 WORKDIR /frontend
 
-
+COPY package*.json ./
 
 
 # RUN - Installing the dependencies
